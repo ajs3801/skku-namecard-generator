@@ -1,0 +1,22 @@
+.top-primary-container {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    padding: 10px 5px 10px 5px;
+    height: 100px;
+}
+
+.header-container {  /* Header Logo and three links */
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-logo {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+#header-logo {
+    width: 100px;
+}
