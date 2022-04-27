@@ -29,25 +29,115 @@
     /* size */
     --size-border-radius: 4px;
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: center;
+}
+
+header {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+main {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+footer {
+    text-align: center;
+}
+
+footer > ul > li {
+    list-style: none;
+}
+
 .top-primary-container {
-    background-color: #1F2937;
-    color: #F9FAF8;
+    background-color: white;
+    color: #1F2937;
     padding: 10px 5px 10px 5px;
     height: 100px;
 }
 
 .header-container {  /* Header Logo and three links */
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .header-logo {
-    font-size: 24px;
-    font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 32px;
+    letter-spacing: 0.6px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
     text-transform: uppercase;
 }
 
 #header-logo {
-    width: 100px;
+    width: 145px;
 }
+
+.slide {
+    font-size: 40px;
+    font-weight: 200;
+    letter-spacing: 5px;
+    padding: 13px 30px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  .slide i {
+    opacity: 0;
+    line-height: 2;
+    font-size: 15px;
+    transition: 0.2s;
+    position: absolute;
+    right: 10px;
+    top: 21px;
+    transition: transform 1;
+  }
+  
+  .slide div {
+    transition: transform 0.8s;
+  }
+  
+  .slide:hover div {
+    transform: translateX(-6px);
+  }
+  
+  .slide::after {
+    content: "";
+    background-color: #66f2d5;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+  }
+  
+  .slide:hover i {
+    opacity: 1;
+    transform: translateX(-6px);
+  }
