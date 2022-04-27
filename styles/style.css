@@ -28,6 +28,9 @@
 
     /* size */
     --size-border-radius: 4px;
+
+    
+    --animation-duration: 300ms;
 }
 
 html, body {
@@ -56,6 +59,7 @@ main {
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
+    margin-left: 50px;
 }
 
 footer {
@@ -64,6 +68,16 @@ footer {
 
 footer > ul > li {
     list-style: none;
+}
+
+.developer__name {
+    margin-top: 15px;
+    margin-left: 80px;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .top-primary-container {
@@ -102,6 +116,7 @@ footer > ul > li {
     padding: 13px 30px 13px;
     outline: 0;
     border: 1px solid black;
+    border-radius: 40px;
     cursor: pointer;
     position: relative;
     background-color: rgba(0, 0, 0, 0);
@@ -126,7 +141,7 @@ footer > ul > li {
     transform: translateX(-6px);
   }
   
-  .slide::after {
+  /* .slide::after {
     content: "";
     background-color: #66f2d5;
     width: 100%;
@@ -135,9 +150,14 @@ footer > ul > li {
     height: 100%;
     top: 7px;
     left: 7px;
-  }
+  } */
   
   .slide:hover i {
     opacity: 1;
     transform: translateX(-6px);
+  }
+
+  .slide:hover div {
+    color: var(--color-blue);
+    transition: all var(--animation-duration) ease-in
   }
