@@ -59,7 +59,6 @@ main {
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
-    margin-left: 50px;
 }
 
 footer {
@@ -72,7 +71,7 @@ footer > ul > li {
 
 .developer__name {
     margin-top: 15px;
-    margin-left: 80px;
+    margin-left: 100px;
 }
 
 h2 {
@@ -87,9 +86,15 @@ h2 {
     height: 100px;
 }
 
+#header-logo {
+    width: 179.5px;
+    height: 179.5px;
+}
 .header-container {  /* Header Logo and three links */
     display: flex;
     justify-content: center;
+    border: 1px solid var(--color-black);
+    padding: 5px 15px 5px 15px;
 }
 
 .header-logo {
@@ -103,6 +108,7 @@ h2 {
     font-style: normal;
     font-variant: normal;
     text-transform: uppercase;
+    padding-right: 30px;
 }
 
 #header-logo {
@@ -154,6 +160,7 @@ h2 {
   
   .slide:hover i {
     opacity: 1;
+    color: var(--color-blue);
     transform: translateX(-6px);
   }
 
@@ -161,3 +168,8 @@ h2 {
     color: var(--color-blue);
     transition: all var(--animation-duration) ease-in
   }
+
+.slide:hover {
+    border-color: var(--color-blue);
+    transition: all var(--animation-duration) ease-in;
+}
