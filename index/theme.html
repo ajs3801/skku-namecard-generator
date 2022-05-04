@@ -9,29 +9,43 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
         rel="stylesheet"
     />
-    
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <title>Choose Theme</title>
 </head>
 <body>
+    <div class="content">
+        <section id="modern" data-scroll>
+            <div><h1 class="modern__name">Modern</h1></div>
+            <div><img src="../img/white.png" alt=""></div>
+            <button id="modern__select"class="modern__select">Select</button>
+        </section>
 
-    <section id="modern">
-        <div><h1 class="modern__name">Modern</h1></div>
-        <div><img src="../img/white.png" alt=""></div>
-        <button id="modern__select"class="modern__select">Select</button>
-    </section>
+        <section class="content__information" data-scroll>
+            <h2>Scroll Down for more</h2>
+        </section>
 
-    <section id="simple">
-        <div><h1 class="simple__name">Simple</h1></div>
-        <div><img src="../img/white.png" alt=""></div>
-        <button id="simple__select" class="simple__select">Select</button>
-    </section>
+        <section id="simple" data-scroll>
+            <div><h1 class="simple__name">Simple</h1></div>
+            <div><img src="../img/white.png" alt=""></div>
+            <button id="simple__select" class="simple__select">Select</button>
+        </section>
 
-    <section id="Colorful">
-        <div><h1 class="color__name">Colorful</h1></div>
-        <div><img src="../img/white.png" alt=""></div>
-        <button id="color__select" class="color__select">Select</button>
-    </section>
+        <section class="content__information" data-scroll>
+            <h2>Scroll Down for more</h2>
+        </section>
 
+        <section id="Colorful" data-scroll>
+            <div><h1 class="color__name">Colorful</h1></div>
+            <div><img src="../img/white.png" alt=""></div>
+            <button id="color__select" class="color__select">Select</button>
+        </section>
+
+    </div>
+    
     <script type="text/javascript" src="../scripts/theme.js"></script>
+
+    <script>
+        ScrollOut({});
+    </script>
 </body>
 </html>
