@@ -4,9 +4,88 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=, initial-scale=1.0">
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+  <link rel="stylesheet" href="../styles/stylenamecard.css"/>
+
   <title>Make NameCard</title>
 </head>
 <body>
-  <h1>Make NameCard</h1>
+  <div class="site-wrap">
+    <section data-scroll>
+      <h1 class="title">이름</h1>
+      <div class="namecard">
+        <div class="namecard__view">
+          <svg width="360" height="200" style="border:1px solid black">
+            <rect width="360" height="200" fill="none"/>
+          </svg>
+        </div>
+      </div>
+      <div class="input">
+        <input type="text" id="nameField" placeholder="홍길동" size="40">
+        <button type="button" id="nameField__btn">select</button>
+      </div>
+    </section>
+
+    <section data-scroll>
+      <h1 class="title">학번</h1>
+      <div class="namecard">
+        <div class="namecard__view">
+          <svg width="360" height="200" style="border:1px solid black">
+            <rect width="360" height="200" fill="none"/>
+          </svg>
+        </div>
+      </div>
+      <div class="input">
+        <input type="text" id="idField" placeholder="20XX111111" size="40">
+        <button type="button" id="idField__btn">select</button>
+      </div>
+    </section>
+
+    <section data-scroll>
+      <h1 class="title">학과</h1>
+      <div class="namecard">
+        <div class="namecard__view">
+          <svg width="360" height="200" style="border:1px solid black">
+            <rect width="360" height="200" fill="none"/>
+          </svg>
+        </div>
+      </div>
+      <div class="input">
+        <input type="text" id="majorField" placeholder="홍길동" size="40">
+        <button type="button" id="majorField__btn">select</button>
+      </div>
+    </section>
+
+    <section data-scroll>
+      <h1 class="title">Email</h1>
+      <div class="namecard">
+        <div class="namecard__view">
+          <svg width="360" height="200" style="border:1px solid black">
+            <rect width="360" height="200" fill="none"/>
+          </svg>
+        </div>
+      </div>
+      <div class="input">
+        <input type="text" id="EmailField" placeholder="홍길동" size="40">
+        <button type="button" id="EmailField__btn">select</button>
+      </div>
+    </section>
+    
+    
+    <section data-scroll class="finish">
+      <button type="button" class=finish__btn>
+        <h1 id="title__finish" style="margin: 20px 0px 20px 0px; color:white;">Finish</h1>
+      </button>
+    </section>
+
+  </div>
+  <script>
+    ScrollOut({
+      onShown: (element) => {
+      },
+    });
+  </script>
+  
+  <script type="text/javascript" src="../scripts/namecard.js"></script>
 </body>
 </html>

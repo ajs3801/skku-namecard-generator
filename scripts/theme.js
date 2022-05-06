@@ -20,3 +20,5 @@ ColorButton.addEventListener("click", () => {
   console.log(NamecardType);
   window.location.href = "../index/Namecard.html";
 })
+
+exports.NamecardType;
