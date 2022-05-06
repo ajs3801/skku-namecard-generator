@@ -1,4 +1,5 @@
 let NamecardType = "";
+// module.exports.NamecardType = NamecardType;
 
 let ModernButton = document.querySelector("#modern__select");
 ModernButton.addEventListener("click", () => {
@@ -21,4 +22,3 @@ ColorButton.addEventListener("click", () => {
   window.location.href = "../index/Namecard.html";
 })
 
-exports.NamecardType;
