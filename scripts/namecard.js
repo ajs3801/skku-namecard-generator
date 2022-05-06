@@ -21,7 +21,6 @@ Namebtn.addEventListener("click", () => {
   //delete text field
   let target = document.querySelector("#name__svg");
   let body = document.querySelector("#name__preview");
-  body.removeChild(target);
 
   //make new element
   let Namefield = document.querySelector("#nameField");
