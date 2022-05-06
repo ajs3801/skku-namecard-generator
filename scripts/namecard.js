@@ -27,14 +27,7 @@ Namebtn.addEventListener("click", () => {
   let Namefield = document.querySelector("#nameField");
   let Name = Namefield.value;
 
-  let newName = document.createElement("text");
-  newName.setAttributeNS(null,"x","40");
-  newName.setAttributeNS(null,"y","155");
-  newName.setAttributeNS(null,"font-size","10");
-  newName.setAttributeNS(null,"fill","#2F2F2F");
-  newName.setAttributeNS(null,"visibility","visible");
-  newName.id="name__svg";
-  newName.textContent = Name;
+  target.textContent = Name;
 
   body.appendChild(newName);
 })
