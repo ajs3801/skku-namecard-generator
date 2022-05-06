@@ -122,7 +122,8 @@ section:last-child {
 
 .content__information {
   background-color: var(--color-white);
-  width: 70%;
+  border-radius: 50px;
+  width: 50%;
   height: 70%;
   display: flex;
   justify-content: center;
@@ -146,7 +147,7 @@ section:last-child {
 
 #modern {
   background-color: var(--color-black);
-  width: 70%;
+  width: 50%;
   height: 70%;
   display: flex;
   justify-content: center;
@@ -187,7 +188,7 @@ section:last-child {
 
 #simple {
   background-color: var(--color-orange);
-  width: 70%;
+  width: 50%;
   height: 70%;
   display: flex;
   justify-content: center;
@@ -227,7 +228,7 @@ section:last-child {
 
 #Colorful {
   background-color: var(--color-dark-pink);
-  width: 70%;
+  width: 50%;
   height: 70%;
   display: flex;
   justify-content: center;
