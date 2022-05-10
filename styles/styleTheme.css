@@ -158,6 +158,10 @@ section:last-child {
   margin-bottom: 5%;
 }
 
+#modern-svg {
+  background-color: white;
+}
+
 .modern__name {
   color: var(--color-white);
 }
