@@ -15,7 +15,9 @@
       <h1 class="title" id="container__title">이름</h1>
       <div class="namecard">
         <div class="namecard__view">
-          <svg width="360" height="200" style="border:1px solid black" id="name__preview">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          xml:space="preserve" width="360" height="200" style="border:1px solid black" id="name__preview">
+          <rect id="svg_1" height="207" width="406" y="-0.5" x="-1" stroke="#000" fill="#fff"/>
             <line x1="20" y1="140" x2="20" y2="180" stroke-width="5" stroke="#8ec63f"/>
             <line x1="340" y1="20" x2="340" y2="60" stroke-width="5" stroke="#8ec63f"/>
             <rect width="70" height="20" fill="none" x="30" y="155" fill="none" style="border:1px solid #8ec63f"/>
@@ -42,12 +44,13 @@
     </section>    
     
     <section data-scroll class="finish">
-      <button type="button" class=finish__btn id="finish__btn">
+      <button type="button" class="finish__btn" id="finish__btn">
         <h1 id="title__finish" style="margin: 20px 0px 20px 0px; color:white;">Finish</h1>
       </button>
     </section>
 
   </div>
+
   <script>
     ScrollOut({
       onShown: (element) => {
@@ -56,5 +59,6 @@
   </script>
 
   <script type="text/javascript" src="../scripts/namecard.js"></script>
+  <script type="text/javascript" src="../scripts/download-svg.js"></script>
 </body>
 </html>
