@@ -202,6 +202,10 @@ section:last-child {
   margin-bottom: 5%;
 }
 
+#simple-svg {
+  background-color: white;
+}
+
 .simple__name {
   color: var(--color-white);
 }
