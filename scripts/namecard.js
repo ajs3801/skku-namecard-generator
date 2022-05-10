@@ -142,7 +142,7 @@ rightbtn.addEventListener("click", () => {
   }
 })
 
-let finish = document.querySelector("#finish__btn");
-finish.addEventListener("click", () => {
-  window.location.href = "../index/Result.html";
+// let finish = document.querySelector("#finish__btn");
+// finish.addEventListener("click", () => {
+//   window.location.href = "../index/Result.html";
 })
