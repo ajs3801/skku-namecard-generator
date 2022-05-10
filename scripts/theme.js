@@ -5,7 +5,7 @@ let ModernButton = document.querySelector("#modern__select");
 ModernButton.addEventListener("click", () => {
   NamecardType = "modern";
   console.log(NamecardType);
-  window.location.href = "../index/Namecard.html";
+  window.location.href = "../index/Namecard_modern.html";
 })
 
 let SimpleButton = document.querySelector("#simple__select");
@@ -19,6 +19,6 @@ let ColorButton = document.querySelector("#color__select");
 ColorButton.addEventListener("click", () => {
   NamecardType = "colorful";
   console.log(NamecardType);
-  window.location.href = "../index/Namecard.html";
+  window.location.href = "../index/Namecard_colorful.html";
 })
 
