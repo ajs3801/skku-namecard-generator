@@ -246,6 +246,10 @@ section:last-child {
   margin-bottom: 10%;
 }
 
+#colorful-svg {
+  background-color: white;
+}
+
 .color__name {
   color: var(--color-white);
 }
