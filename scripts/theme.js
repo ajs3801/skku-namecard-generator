@@ -12,7 +12,7 @@ let SimpleButton = document.querySelector("#simple__select");
 SimpleButton.addEventListener("click", () => {
   NamecardType = "simple";
   console.log(NamecardType);
-  window.location.href = "../index/Namecard.html";
+  window.location.href = "../index/Namecard_simple.html";
 })
 
 let ColorButton = document.querySelector("#color__select");
