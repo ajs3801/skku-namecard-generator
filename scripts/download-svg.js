@@ -28,5 +28,6 @@ function downloadSVGAsPNG(e){
       //canvas.parentNode.removeChild(canvas);
     }  
   }
+
   const downloadPNG = document.querySelector('.finish__btn');
   downloadPNG.addEventListener('click', downloadSVGAsPNG);
