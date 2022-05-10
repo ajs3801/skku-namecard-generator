@@ -16,62 +16,130 @@
 
 // }
 
-let name_js = "";
-let id_js = "";
-let major_js = "";
-let Email_js = "";
+// let name_js = "";
+// let id_js = "";
+// let major_js = "";
+// let Email_js = "";
+let current = 1;
 
-let Namebtn = document.querySelector("#nameField__btn");
-Namebtn.addEventListener("click", () => {
-  //delete text field
-  let target = document.querySelector("#name__svg");
-  //let result = document.querySelector("#result__name__svg");
+let leftbtn = document.querySelector("#textField__left__btn");
+let rightbtn = document.querySelector("#textField__right__btn");
 
-  //make new element
-  let Namefield = document.querySelector("#nameField");
-  let Name = Namefield.value;
+leftbtn.addEventListener("click", () => {
+  if (current>1 && current<=4) {
+    let title = document.querySelector("#container__title");
+    let nameField = document.querySelector("#name__svg");
+    let majorField = document.querySelector("#major__svg");
+    let EmailField = document.querySelector("#Email__svg");
+    let idField = document.querySelector("#id__svg");
+    let textField = document.querySelector("#text_Field");
 
-  name_js = Name;
-  //result.textContent = Name;
-  target.textContent = Name;
+    if (current == 1) {
+      let value = textField.value;
+      nameField.textContent = value;
+    }
+
+    else if (current == 2) {
+      let value = textField.value;
+      idField.textContent = value;
+    }
+
+    else if (current == 3) {
+      let value = textField.value;
+      majorField.textContent = value;
+    }
+
+    else if (current == 4) {
+      let value = textField.value;
+      EmailField.textContent = value;
+    }
+    current = current - 1;
+
+    if (current == 1) {
+      title.textContent = "이름";
+      leftbtn.textContent = "X";
+      rightbtn.textContent = "다음";
+    }
+
+    else if (current == 2) {
+      title.textContent = "학번";
+      leftbtn.textContent = "이전";
+      rightbtn.textContent = "다음";
+    }
+
+    else if (current == 3) {
+      title.textContent = "학과";
+      leftbtn.textContent = "이전";
+      rightbtn.textContent = "다음";
+    }
+
+    else if (current == 4) {
+      title.textContent = "Email";
+      leftbtn.textContent = "이전";
+      rightbtn.textContent = "선택";
+    }
+    textField.value = null;
+  }
 })
 
-let idbtn = document.querySelector("#idField__btn");
-idbtn.addEventListener("click", () => {
-  let target = document.querySelector("#id__svg");
-  //let result = document.querySelector("#result__id__svg");
+rightbtn.addEventListener("click", () => {
+  if (current>=1 && current<=4) {
+    let title = document.querySelector("#container__title");
+    let nameField = document.querySelector("#name__svg");
+    let majorField = document.querySelector("#major__svg");
+    let EmailField = document.querySelector("#Email__svg");
+    let idField = document.querySelector("#id__svg");
+    let textField = document.querySelector("#text_Field");
 
-  let idfield = document.querySelector("#idField");
-  let id = idfield.value;
-  
-  id_js = id;
-  //result.textContent = id;
-  target.textContent = id;
-})
+    if (current == 1) {
+      let value = textField.value;
+      nameField.textContent = value;
+    }
 
-let majorbtn = document.querySelector("#majorField__btn");
-majorbtn.addEventListener("click", () => {
-  let target = document.querySelector("#major__svg");
-  //let result = document.querySelector("#result__major__svg");
+    else if (current == 2) {
+      let value = textField.value;
+      idField.textContent = value;
+    }
 
-  let majorfield = document.querySelector("#majorField");
-  let major = majorfield.value;
+    else if (current == 3) {
+      let value = textField.value;
+      majorField.textContent = value;
+    }
 
-  major_js = major;
-  //result.textContent = major;
-  target.textContent = major;
-})
+    else if (current == 4) {
+      let value = textField.value;
+      EmailField.textContent = value;
+    }
 
-let Emailbtn = document.querySelector("#EmailField__btn");
-Emailbtn.addEventListener("click", () => {
-  let target = document.querySelector("#Email__svg");
-  //let result = document.querySelector("#result__Email__svg");
+    if (current!=4) {
+      current = current + 1;
+    }
 
-  let Emailfield = document.querySelector("#EmailField");
-  let Email = Emailfield.value;
-  Email_js = Email;
-  //result.textContent = Email;
-  target.textContent = Email;
+    if (current == 1) {
+      title.textContent = "이름";
+      leftbtn.textContent = "없음";
+      rightbtn.textContent = "다음";
+    }
+
+    else if (current == 2) {
+      title.textContent = "학번";
+      leftbtn.textContent = "이전";
+      rightbtn.textContent = "다음";
+    }
+
+    else if (current == 3) {
+      title.textContent = "학과";
+      leftbtn.textContent = "이전";
+      rightbtn.textContent = "다음";
+    }
+
+    else if (current == 4) {
+      title.textContent = "Email";
+      leftbtn.textContent = "이전";
+      rightbtn.textContent = "선택";
+    }
+    textField.value = null;
+  }
 })
 
 let finish = document.querySelector("#finish__btn");
