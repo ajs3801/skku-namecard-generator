@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+  <link rel="stylesheet" href="../styles/stylenamecard.css"/>
+
+  <title>Make NameCard</title>
+</head>
+<body>
+    <div class="site-wrap">
+        <section data-scroll>
+          <h1 class="title" id="container__title">이름</h1>
+          <div class="namecard">
+            <div class="namecard__view">
+              <svg width="360" height="200" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <title>Layer 1</title>
+                    <ellipse fill="#fff" stroke="#000" cx="-13.57137" cy="-36.14275" id="svg_5" rx="100" ry="100" stroke-dasharray="5,2,2,2,2,2" stroke-width="39"/>
+                    <ellipse stroke="#000" fill="#fff" stroke-width="39" stroke-dasharray="5,2,2,2,2,2" cx="370" cy="230" id="svg_7" rx="100" ry="100"/>
+                    <text xml:space="preserve" text-anchor="start" font-family="'Hepta Slab'" font-size="10" id="svg_2" y="-87.50327" x="-151.21367" stroke-dasharray="5,2,2,2,2,2" stroke-width="0" stroke="#000" fill="#000000">홍길동</text>
+                    <text xml:space="preserve" text-anchor="start" font-family="'Hepta Slab'" font-size="10" id="name__svg" y="147.85307" x="11.4254" stroke-dasharray="5,2,2,2,2,2" stroke-width="0" stroke="#000" fill="#000000">HONG GIL DONG</text>
+                    <text xml:space="preserve" text-anchor="start" font-family="'Hepta Slab'" font-size="10" id="id__svg" y="162.85282" x="11.42539" stroke-dasharray="5,2,2,2,2,2" stroke-width="0" stroke="#000" fill="#000000">20213125810</text>
+                    <text xml:space="preserve" text-anchor="start" font-family="'Hepta Slab'" font-size="10" id="svg_6" y="132.47595" x="11.42539" stroke-dasharray="5,2,2,2,2,2" stroke-width="0" stroke="#000" fill="#000000">SUNGKYUNKWAN UNIVERSITY</text>
+                    <text xml:space="preserve" text-anchor="start" font-family="'Hepta Slab'" font-size="10" id="github__svg" y="177.1383" x="11" stroke-dasharray="5,2,2,2,2,2" stroke-width="0" stroke="#000" fill="#000000">github.com/iamgildong</text>
+                </g>
+               
+              </svg>
+              <!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              xml:space="preserve" width="360" height="200" id="name__preview">
+                <rect id="svg_1" height="200" width="360" stroke="#000" fill="#fff"/> 
+                <line x1="20" y1="140" x2="20" y2="180" stroke-width="5" stroke="#8ec63f"/>
+                <line x1="340" y1="20" x2="340" y2="60" stroke-width="5" stroke="#8ec63f"/>
+                <!- <rect width="70" height="20" fill="none" x="30" y="155" fill="none" style="border:1px solid #8ec63f"/> -->
+                <!-- <image
+                  href="../img/skku-logo-svgfile.svg"
+                  width="40"
+                  height="40"
+                  x="20"
+                  y="20"
+                >
+                </image>
+                <text x="40" y="155" font-size="10" fill="#2F2F2F" id="name__svg" visibility="visible">홍길동</text>
+                <text x="40" y="170" font-size="10" fill="#2F2F2F" id="id__svg" visibility="visible"></text>
+                <text x="330" y="35" font-size="10" fill="#2F2F2F" id="major__svg" visibility="visible" text-anchor="end"></text>
+                <text x="330" y="50" font-size="10" fill="#2F2F2F" id="Email__svg" visibility="visible" text-anchor="end"></text>
+              </svg> -->
+            </div>
+          </div>
+          <div class="input">
+            <button type="button" id="textField__left__btn" style="margin-right: 10px;">이전</button>
+            <input type="text" id="text_Field" placeholder="입력해주세요" size="40">
+            <button type="button" id="textField__right__btn" style="margin-left: 15px;">다음</button>
+          </div>
+        </section>    
+        
+        <section data-scroll class="finish">
+          <button type="button" class="finish__btn" id="finish__btn">
+            <h1 id="title__finish" style="margin: 20px 0px 20px 0px; color:white;">Finish</h1>
+          </button>
+        </section>
+    
+      </div>
+    
+      <script>
+        ScrollOut({
+          onShown: (element) => {
+          },
+        });
+      </script>
+    
+      <script type="text/javascript" src="../scripts/namecard_modern.js"></script>
+      <script type="text/javascript" src="../scripts/download-svg.js"></script>
+</body>  
