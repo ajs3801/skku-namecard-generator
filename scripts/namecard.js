@@ -26,14 +26,15 @@ let leftbtn = document.querySelector("#textField__left__btn");
 let rightbtn = document.querySelector("#textField__right__btn");
 let title = document.querySelector("#container__title");
 let textField = document.querySelector("#text_Field");
+let popup = document.querySelector("#message__popup");
 
 let fields = [
-  ["이름", document.querySelector("#name__svg")],
-  ["학번", document.querySelector("#id__svg")],
-  ["이메일", document.querySelector("#email__svg")],
-  ["학과", document.querySelector("#major__svg")],
-  ["깃허브 계정", document.querySelector("#github__svg")],
-  ["전화번호", document.querySelector("#ph__svg")]
+  ["이름", document.querySelector("#name__svg"),"이름을 입력해주세요"],
+  ["학번", document.querySelector("#id__svg"),"학번을 입력해주세요"],
+  ["이메일", document.querySelector("#email__svg"),"Email을 입력해주세요"],
+  ["학과", document.querySelector("#major__svg"),"학과를 입력해주세요"],
+  ["깃허브 계정", document.querySelector("#github__svg"),"깃허브 계정을 입력해주세요"],
+  ["전화번호", document.querySelector("#ph__svg"),"전화번호를 입력해주세요"]
 ];
 //   name: ["이름", document.querySelector("#name__svg")],
 //   id: ["학번", document.querySelector("#id__svg")],
@@ -46,13 +47,20 @@ let fields = [
 let count = 0;
 
 rightbtn.addEventListener("click", () => {
-  console.log(count);
+  // console.log(count);
+
 
   if(count > fields.length - 1) {
     return;
   }
   else {
     let value = textField.value;
+
+    if (value === "") {
+      popup.textContent = "정보를 입력하고 다음 및 이전을 눌러주세요";
+      return;
+    }
+
     fields[count][1].textContent = value;
 
     textField.value = null;
@@ -63,6 +71,7 @@ rightbtn.addEventListener("click", () => {
 
     console.log(count);
     title.textContent = fields[count][0];
+    popup.textContent = fields[count][2];
   }
   // if(count == length(fields)) {
   //   // TODO: 마지막에만 다운로드 버튼 뜨게  
@@ -75,16 +84,24 @@ rightbtn.addEventListener("click", () => {
 // let idField = document.querySelector("#id__svg");
 
 leftbtn.addEventListener("click", () => {
-  console.log(count);
+  // console.log(count);
+
   if(count <= 0) return;
   
-  title.textContent = fields[count][0];
   let value = textField.value;
+
+  if (value === "") {
+    popup.textContent = "정보를 입력하고 다음 및 이전을 눌러주세요";
+    return;
+  }
+
   fields[count][1].textContent = value;
+  title.textContent = fields[count][0];
 
   textField.value = null;
   count--;
   title.textContent = fields[count][0];
+  popup.textContent = fields[count][2];
   // if(count == length(fields)) {
   //   // TODO: 마지막에만 다운로드 버튼 뜨게  
   // }
