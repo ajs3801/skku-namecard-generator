@@ -32,6 +32,11 @@
     --animation-duration: 300ms;
 }
 
+.Developer {
+    font-size: var(--font-samll);
+    margin-top: 10px;
+}
+
 html, body {
     margin: 0;
     padding: 0;
