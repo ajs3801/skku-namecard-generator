@@ -27,15 +27,15 @@ let rightbtn = document.querySelector("#textField__right__btn");
 let title = document.querySelector("#container__title");
 let textField = document.querySelector("#text_Field");
 let popup = document.querySelector("#message__popup");
-let finish = document.querySelector("#div__finish");
+let selectbtn = document.querySelector("#select__btn");
 
 let fields = [
-  ["이름", document.querySelector("#name__svg"),"이름을 입력해주세요"],
-  ["학번", document.querySelector("#id__svg"),"학번을 입력해주세요"],
-  ["이메일", document.querySelector("#email__svg"),"Email을 입력해주세요"],
-  ["학과", document.querySelector("#major__svg"),"학과를 입력해주세요"],
-  ["깃허브 계정", document.querySelector("#github__svg"),"깃허브 계정을 입력해주세요"],
-  ["전화번호", document.querySelector("#ph__svg"),"전화번호를 입력해주세요"]
+  ["이름", document.querySelector("#name__svg"),"위에 이름을 입력해주세요"],
+  ["학번", document.querySelector("#id__svg"),"위에 학번을 입력해주세요"],
+  ["이메일", document.querySelector("#email__svg"),"위에 Email을 입력해주세요"],
+  ["학과", document.querySelector("#major__svg"),"위에 학과를 입력해주세요"],
+  ["깃허브 계정", document.querySelector("#github__svg"),"위에 깃허브 계정을 입력해주세요"],
+  ["전화번호", document.querySelector("#ph__svg"),"위에 전화번호를 입력해주세요"]
 ];
 //   name: ["이름", document.querySelector("#name__svg")],
 //   id: ["학번", document.querySelector("#id__svg")],
@@ -46,6 +46,17 @@ let fields = [
 // }
 
 let count = 0;
+selectbtn.addEventListener("click", () => {
+  let value = textField.value;
+
+  if (value === "") {
+      popup.textContent = "정보를 입력하고 다음 및 이전을 눌러주세요";
+      return;
+  }
+  
+  fields[count][1].textContent = value;
+  textField.value = null;
+});
 
 rightbtn.addEventListener("click", () => {
   // console.log(count);
@@ -56,14 +67,9 @@ rightbtn.addEventListener("click", () => {
     return;
   }
   else {
-    let value = textField.value;
+    // let value = textField.value;
 
-    if (value === "") {
-      popup.textContent = "정보를 입력하고 다음 및 이전을 눌러주세요";
-      return;
-    }
-
-    fields[count][1].textContent = value;
+    // fields[count][1].textContent = value;
 
     textField.value = null;
 
@@ -71,7 +77,7 @@ rightbtn.addEventListener("click", () => {
       count++;
     }
 
-    console.log(count);
+    //console.log(count);
     title.textContent = fields[count][0];
     popup.textContent = fields[count][2];
   }
@@ -90,18 +96,14 @@ leftbtn.addEventListener("click", () => {
 
   if(count <= 0) return;
   
-  let value = textField.value;
+  //let value = textField.value;
 
-  if (value === "") {
-    popup.textContent = "정보를 입력하고 다음 및 이전을 눌러주세요";
-    return;
-  }
-
-  fields[count][1].textContent = value;
-  title.textContent = fields[count][0];
+  // fields[count][1].textContent = value;
+  // title.textContent = fields[count][0];
 
   textField.value = null;
   count--;
+
   title.textContent = fields[count][0];
   popup.textContent = fields[count][2];
   // if(count == length(fields)) {
