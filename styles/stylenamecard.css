@@ -149,6 +149,7 @@ section {
 .namecard__view {
   margin-right: 30px;
   margin: auto;
+  border: 1px solid black;
 }
 
 .finish {
