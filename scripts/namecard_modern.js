@@ -51,6 +51,8 @@ selectbtn.addEventListener("click", () => {
   
   fields[count][1].textContent = value;
   textField.value = null;
+
+  popup.textContent = "select를 누르셨으면, 다음 혹은 이전을 눌러주세요."
 });
 
 rightbtn.addEventListener("click", () => {
@@ -60,7 +62,7 @@ rightbtn.addEventListener("click", () => {
     popup.textContent = "현재 화면이 마지막 항목입니다";
     return;
   }
-  
+
   else {
     // let value = textField.value;
     // fields[count][1].textContent = value;

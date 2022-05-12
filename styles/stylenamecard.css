@@ -141,10 +141,12 @@ section {
 
 #textField__left__btn {
   margin:auto;
+  font-size: var(--font-regular);
 }
 
 #textField__right__btn {
   margin: auto;
+  font-size: var(--font-regular);
 }
 .namecard__view {
   margin-right: 30px;
