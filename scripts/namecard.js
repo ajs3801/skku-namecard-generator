@@ -27,6 +27,7 @@ let rightbtn = document.querySelector("#textField__right__btn");
 let title = document.querySelector("#container__title");
 let textField = document.querySelector("#text_Field");
 let popup = document.querySelector("#message__popup");
+let finish = document.querySelector("#div__finish");
 
 let fields = [
   ["이름", document.querySelector("#name__svg"),"이름을 입력해주세요"],
@@ -49,6 +50,7 @@ let count = 0;
 rightbtn.addEventListener("click", () => {
   // console.log(count);
 
+  // $('#div__finish').hide();
 
   if(count > fields.length - 1) {
     return;
