@@ -1,3 +1,4 @@
+// image bug may be occured
 function downloadSVGAsPNG(e){
     const canvas = document.createElement("canvas");
     const svg = document.querySelector('svg');
