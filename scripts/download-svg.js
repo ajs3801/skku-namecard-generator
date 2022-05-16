@@ -30,5 +30,5 @@ function downloadSVGAsPNG(e){
     }  
   }
 
-  const downloadPNG = document.querySelector('.finish__btn');
+  const downloadPNG = document.querySelector('#finish__btn');
   downloadPNG.addEventListener('click', downloadSVGAsPNG);

@@ -151,21 +151,20 @@ section {
 .namecard__view {
   margin-right: 30px;
   margin: auto;
-  border: 1px solid black;
 }
 
 .finish {
   padding: 0px 0px 0px 0px;
 }
 
-.finish__btn {
+#finish__btn {
   width: 100%;
   height: 100%;
   background-color: #5961f9;
   margin: 0px 0px 0px 0px;
 }
 
-.finish__btn:hover {
+#finish__btn:hover {
   background-color: #5961f9;
   border: 1px solid white;
   color: white;
