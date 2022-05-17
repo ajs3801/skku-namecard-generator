@@ -1,3 +1,4 @@
+// image bug may be occured
 function downloadSVGAsPNG(e){
     const canvas = document.createElement("canvas");
     const svg = document.querySelector('svg');
@@ -29,5 +30,5 @@ function downloadSVGAsPNG(e){
     }  
   }
 
-  const downloadPNG = document.querySelector('.finish__btn');
+  const downloadPNG = document.querySelector('#finish__btn');
   downloadPNG.addEventListener('click', downloadSVGAsPNG);

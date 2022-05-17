@@ -56,19 +56,19 @@ selectbtn.addEventListener("click", () => {
   
   fields[count][1].textContent = value;
   textField.value = null;
+
+  popup.textContent = "select를 누르셨으면, 다음 혹은 이전을 눌러주세요."
 });
 
 rightbtn.addEventListener("click", () => {
-  // console.log(count);
 
-  // $('#div__finish').hide();
-
-  if(count > fields.length - 1) {
+  if(count >= fields.length - 1) {
+    popup.textContent = "현재 화면이 마지막 항목입니다";
     return;
   }
+
   else {
     // let value = textField.value;
-
     // fields[count][1].textContent = value;
 
     textField.value = null;
@@ -77,7 +77,6 @@ rightbtn.addEventListener("click", () => {
       count++;
     }
 
-    //console.log(count);
     title.textContent = fields[count][0];
     popup.textContent = fields[count][2];
   }
@@ -92,14 +91,15 @@ rightbtn.addEventListener("click", () => {
 // let idField = document.querySelector("#id__svg");
 
 leftbtn.addEventListener("click", () => {
-  // console.log(count);
-
-  if(count <= 0) return;
+  //console.log(count);
+  if(count <= 0) {
+    popup.textContent = "이전 항목이 없습니다";
+    return;
+  }
   
-  //let value = textField.value;
-
-  // fields[count][1].textContent = value;
   // title.textContent = fields[count][0];
+  // let value = textField.value;
+  // fields[count][1].textContent = value;
 
   textField.value = null;
   count--;

@@ -56,7 +56,6 @@ selectbtn.addEventListener("click", () => {
 });
 
 rightbtn.addEventListener("click", () => {
-  console.log(count);
 
   if(count >= fields.length - 1) {
     popup.textContent = "현재 화면이 마지막 항목입니다";
@@ -73,7 +72,6 @@ rightbtn.addEventListener("click", () => {
       count++;
     }
 
-    console.log(count);
     title.textContent = fields[count][0];
     popup.textContent = fields[count][2];
   }
