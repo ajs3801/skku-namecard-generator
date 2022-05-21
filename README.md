@@ -4,7 +4,7 @@ Project for SKKU SWE2021 Open Source Lab.
 
 - Developers
 > 2021****** 소프트웨어학과 김정원
-> 2021****** 소프트웨어학과 안준성
+> 2021312661 소프트웨어학과 안준성
 > 2021312754 소프트웨어학과 진형주
 
 ## Project Explanation
