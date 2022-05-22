@@ -60,15 +60,16 @@ I will let you know the easiest way.
 2. As above image, click the code, and click "download ZIP"
 
 ### Second, modify these parts
-In page/index.html/ line 21,24
-```<img id="header-logo" src="img/skku-logo.jpg" alt="">```
-Download your school logo to img/ and link to src.
-```<h3 class="header-logo">SKKU Business Card Maker<br><hr>성균관대학교 명함 제작 플랫폼</h3>```
-Change 'SKKU' and '성균관대학교' to your school name.
+In page/index.html/ line 21 & 24  ```<img id="header-logo" src="img/skku-logo.jpg" alt="">```  Download your school logo to img/ and link to src.  ```<h3 class="header-logo">SKKU Business Card Maker<br><hr>성균관대학교 명함 제작 플랫폼</h3>```  Change 'SKKU' and '성균관대학교' to your school name.
+
+If you want to make a new theme of namecard, edit
+
 
 # Include credits
 
-content
+> 2021313826 소프트웨어학과 [김정원](https://github.com/GardenJWKIM)
+> 2021312661 소프트웨어학과 [안준성](https://github.com/ajs3801)
+> 2021312754 소프트웨어학과 [진형주](https://github.com/iamjinhyoungjoo)
 
 # Add a license
 
