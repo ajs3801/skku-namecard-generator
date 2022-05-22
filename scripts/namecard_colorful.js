@@ -7,6 +7,9 @@ let popup = document.querySelector("#message__popup");
 
 //These are contents to be put on the namecard.
 let fields = [
+  /*'fields' is a array of six elements. Each element is also an array with three elemnents.
+  The first element is title, the second element gets the textfield of the title,
+  and the third element put the sentence to be displayed in the pop-up message when the element is reached.*/
   ["이름", document.querySelector("#name__svg"), "위에 이름을 입력해주세요"],
   ["이메일", document.querySelector("#email__svg"), "위에 이메일을 입력해주세요"],
 ];
