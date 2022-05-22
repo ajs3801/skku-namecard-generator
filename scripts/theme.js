@@ -1,6 +1,4 @@
 let NamecardType = "";
-// module.exports.NamecardType = NamecardType;
-
 //These are a functions of the button used to select a theme.
 
 //Move to Namecard_modern.html.
