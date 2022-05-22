@@ -22,6 +22,8 @@
 // let Email_js = "";
 // let current = 1;
 
+//These are functions of the button used to make colorful namecard.
+
 let leftbtn = document.querySelector("#textField__left__btn");
 let rightbtn = document.querySelector("#textField__right__btn");
 let title = document.querySelector("#container__title");
@@ -29,6 +31,7 @@ let textField = document.querySelector("#text_Field");
 let selectbtn = document.querySelector("#select__btn");
 let popup = document.querySelector("#message__popup");
 
+//These are contents to be put on the namecard.
 let fields = [
   ["이름", document.querySelector("#name__svg"), "위에 이름을 입력해주세요"],
   ["이메일", document.querySelector("#email__svg"), "위에 이메일을 입력해주세요"],
@@ -43,6 +46,7 @@ let fields = [
 
 let count = 0;
 
+//This is a fuction of select button to enter the contents in the namecard.
 selectbtn.addEventListener("click", () => {
   let value = textField.value;
 
@@ -57,6 +61,7 @@ selectbtn.addEventListener("click", () => {
   popup.textContent = "select를 누르셨으면, 다음 혹은 이전을 눌러주세요."
 });
 
+//This is a function of the "다음" button that allows you to enter the followng contents.
 rightbtn.addEventListener("click", () => {
   console.log(count);
 
@@ -89,6 +94,7 @@ rightbtn.addEventListener("click", () => {
 // let EmailField = document.querySelector("#Email__svg");
 // let idField = document.querySelector("#id__svg");
 
+//This is a function of the "이전" button that allows you to enter the previous contents.
 leftbtn.addEventListener("click", () => {
   //console.log(count);
   if(count <= 0) {
