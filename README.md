@@ -2,11 +2,6 @@
 
 Project for SKKU SWE2021 Open Source Lab.
 
-- Developers
-> 2021313826 소프트웨어학과 김정원
-> 2021312661 소프트웨어학과 안준성
-> 2021312754 소프트웨어학과 진형주
-
 # Project Explanation
 
 The goal of this web application is to give SKKU students a chance to let them create their own name card. This website will provide three options for design, and each design will ask the user to input the required entries to make the name card. After, the name card will be available for download as a .png file.
@@ -60,19 +55,36 @@ I will let you know the easiest way.
 2. As above image, click the code, and click "download ZIP"
 
 ### Second, modify these parts
-In page/index.html/ line 21 & 24
+- In page/index.html/ line 21 & 24
 
-```<img id="header-logo" src="img/skku-logo.jpg" alt="">```
+``` html
+<img id="header-logo" src="img/skku-logo.jpg" alt="">
+```
 
-Download your school logo to img/ and link to src.
+- Change 'SKKU' and '성균관대학교' to your school name. 
 
-```<h3 class="header-logo">SKKU Business Card Maker<br><hr>성균관대학교 명함 제작 플랫폼</h3>```
+``` html 
+<h3 class="header-logo">SKKU Business Card Maker<br><hr>성균관대학교 명함 제작 플랫폼</h3>
+```
 
-Change 'SKKU' and '성균관대학교' to your school name.
+- If you want to make a new theme of namecard, edit (make sure to add data-scroll to give an effect)
+``` html
+  <section id="simple" data-scroll>
+    
+  </section>
+```
 
-If you want to make a new theme of namecard, edit
+- javascript fiels data ("titlename", "titlename's textField", "popup message")
 
-# Include credits
+``` javascript
+  let fields = [
+    ["이름", document.querySelector("#name__svg"), "위에 이름을 입력해주세요"],
+    ["이메일", document.querySelector("#email__svg"), "위에 이메일을 입력해주세요"],
+   ];
+```
+
+See the more details in our code's comment!
+# Credits
 
 > 2021313826 소프트웨어학과 [김정원](https://github.com/GardenJWKIM)
 > 2021312661 소프트웨어학과 [안준성](https://github.com/ajs3801)
