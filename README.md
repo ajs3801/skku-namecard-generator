@@ -15,7 +15,7 @@ The goal of this web application is to give SKKU students a chance to let them c
 # How to install and Run the Project
 
 This program doesn't need to install because this project is web-based project.
-So, All you have to do is just going into [this link](https://ajs3801.github.io/skku-namecard-generator/)
+So, All you have to do is just going into [this link](https://iamjinhyoungjoo.github.io/skku-namecard-generator/)
 
 ### First, click "START DESIGNING". Then you are ready to start designing the namecard
 <img width="1512" alt="Screen Shot 2022-05-22 at 5 00 11 PM" src="https://user-images.githubusercontent.com/43237393/169684936-5012d80d-2b89-43cf-a857-709acd7a9736.png">
@@ -60,6 +60,11 @@ I will let you know the easiest way.
 2. As above image, click the code, and click "download ZIP"
 
 ### Second, modify these parts
+In page/index.html/ line 21,24
+```<img id="header-logo" src="img/skku-logo.jpg" alt="">```
+Download your school logo to img/ and link to src.
+```<h3 class="header-logo">SKKU Business Card Maker<br><hr>성균관대학교 명함 제작 플랫폼</h3>```
+Change 'SKKU' and '성균관대학교' to your school name.
 
 # Include credits
 
