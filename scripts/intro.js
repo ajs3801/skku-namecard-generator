@@ -1,0 +1,1 @@
+//add javascipt code for index.html
